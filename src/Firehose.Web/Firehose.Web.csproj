@@ -121,6 +121,7 @@
     <Content Include="Content\img\icons\ms-icon-310x310.png" />
     <Content Include="Content\img\icons\ms-icon-70x70.png" />
     <Content Include="Content\img\planetxamarin-featured-badge.png" />
+    <Content Include="Content\img\portalcms-device.png" />
     <Content Include="Content\plugins\animate.css" />
     <Content Include="Content\plugins\bootstrap\css\bootstrap-theme.css" />
     <Content Include="Content\plugins\bootstrap\css\bootstrap-theme.min.css" />
@@ -129,7 +130,6 @@
     <Content Include="Content\plugins\bootstrap\css\bootstrap.planetxamarin.css" />
     <Content Include="Content\plugins\bootstrap\css\bootstrap.planetxamarin.min.css" />
     <Content Include="Content\img\planetxamarin-box-mask.svg" />
-    <Content Include="Content\img\planetxamarin-device.png" />
     <Content Include="Content\css\site.css" />
     <Content Include="Content\plugins\fontawesome\css\font-awesome.css" />
     <Content Include="Content\plugins\fontawesome\css\font-awesome.min.css" />

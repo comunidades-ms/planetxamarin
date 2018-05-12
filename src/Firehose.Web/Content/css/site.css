@@ -72,11 +72,11 @@
   text-overflow: ellipsis;
   text-align: center;
 }
-.profileCard .profileCardWrapper .name {
-  margin: 10px 0 0 0;
-  color: #b455b6;
-  font-size: 22px;
-}
+    .profileCard .profileCardWrapper .name {
+        margin: 10px 0 0 0;
+        color: #224467;
+        font-size: 22px;
+    }
 .profileCard .profileCardWrapper .description {
   min-height: 80px;
 }

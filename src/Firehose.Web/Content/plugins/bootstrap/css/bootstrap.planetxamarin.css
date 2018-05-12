@@ -22,7 +22,7 @@ hr {
   margin: 40px 0;
 }
 .navbar-inverse {
-  background-color: #b455b6;
+  background-color: #224467;
   border: none;
 }
 .navbar-inverse .navbar-nav > .active > a,
@@ -32,10 +32,10 @@ hr {
   background-color: transparent;
 }
 .navbar-inverse .navbar-header {
-  border-bottom: 1px solid #9f57a0;
+  border-bottom: 1px solid #224467;
 }
 .navbar-inverse .navbar-header .navbar-brand {
-  background: url(../../../img/planetxamarin-device.png) no-repeat 30px 50%;
+  background: url(../../../img/portalcms-device.png) no-repeat 30px 50%;
   background-size: 60px 60px;
   padding: 0 0 0 100px;
   color: #fff;
@@ -68,8 +68,8 @@ hr {
   margin: 0 -15px;
 }
 .navbar-inverse .navbar-collapse ul li {
-  background-color: #b455b6;
-  border-bottom: 1px solid #9f57a0;
+  background-color: #224467;
+  border-bottom: 1px solid #224467;
   padding: 0 20px;
 }
 .navbar-inverse .navbar-collapse ul li.active {
@@ -77,13 +77,13 @@ hr {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: #b455b6;
+  border-color: #224467;
 }
 .nav > li > a {
   padding: 10px 0;
 }
 .btn-primary {
-  background-color: #9f57a0;
+  background-color: #224467;
   border-radius: 0;
   border: 0;
   padding: 10px 15px;
