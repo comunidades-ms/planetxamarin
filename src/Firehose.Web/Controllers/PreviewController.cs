@@ -17,7 +17,7 @@ namespace Firehose.Web.Controllers
             _combinedFeedSource = combinedFeedSource;
         }
 
-        [Route("preview")]
+        [Route("articulos")]
         public ViewResult Index(int? numPosts = 50)
         {
             var feed = GetFeed(numPosts);
