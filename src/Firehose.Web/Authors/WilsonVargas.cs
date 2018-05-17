@@ -23,7 +23,5 @@ namespace Firehose.Web.Authors
         public string GravatarHash => "3544142bb4ef8f597b1c14b887b0b905";
         public string GitHubHandle => "wilsonvargas";
         public GeoPosition Position => new GeoPosition(-8.120174, -79.035157);
-
-        public string FeedLanguageCode => "es";
     }
 }

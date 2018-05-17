@@ -102,7 +102,7 @@ namespace Firehose.Web.Infrastructure
                 var filter = GetFilterFunction(tamarin);
                 var client = GetHttpClient();
                 var feed = await FetchAsync(client, uri, filter).ConfigureAwait(false);
-                feed.Language = CultureInfo.CreateSpecificCulture(tamarin.FeedLanguageCode).Name;
+                feed.Language = CultureInfo.CreateSpecificCulture("es").Name;
                 feedSource.Feed = feed;
 
                 return feedSource;
