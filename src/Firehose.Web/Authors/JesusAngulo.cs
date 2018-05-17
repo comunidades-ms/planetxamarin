@@ -10,11 +10,12 @@ namespace Firehose.Web.Authors
         public string LastName => "Angulo";
         public string StateOrRegion => "Lima";
         public string EmailAddress => "jesus.angulo@outlook.com";
-        public string ShortBioOrTagLine => "Microsoft MVP | Certified Xamarin Mobile Developer";
+        public string ShortBioOrTagLine => "Certified Xamarin Mobile Developer";
         public Uri WebSite => new Uri("https://somostechies.com");
         public string TwitterHandle => "jesulink2514";
         public string GitHubHandle => "jesulink2514";
         public string GravatarHash => "63359672e0ecb75e7ed261a358bf0478";
+        public string Category => "Visual Studio and Development Technologies";
 
         public IEnumerable<Uri> FeedUris
         {

@@ -6,6 +6,6 @@ using System.Web;
 namespace Firehose.Web.Authors
 {
     public class RenzoRobles
-    {
+    {        
     }
 }
