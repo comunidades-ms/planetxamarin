@@ -227,7 +227,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Feed\Read.cshtml" />
     <Content Include="Views\Authors\Index.cshtml" />
-    <Content Include="Views\Authors\BusinessCard.cshtml" />
     <Content Include="Content\plugins\bootstrap\css\bootstrap.planetxamarin.less" />
     <Content Include="Content\plugins\jquery\jquery-3.1.1.slim.min.map" />
     <Content Include="Content\plugins\jquery\jquery-3.1.1.min.map" />
