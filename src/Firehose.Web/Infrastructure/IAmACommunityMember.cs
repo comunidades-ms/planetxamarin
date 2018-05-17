@@ -9,7 +9,7 @@ namespace Firehose.Web.Infrastructure
 
         public double Lat { get; }
         public double Lng { get; }
-        
+
         public GeoPosition(double lat, double lng)
         {
             Lat = lat;
@@ -38,16 +38,18 @@ namespace Firehose.Web.Infrastructure
 
     public interface IWorkAtMicrosoft : IAmACommunityMember
     {
+        string Job { get; }
     }
 
     public interface IAmAMicrosoftMVP : IAmACommunityMember
     {
+        string Category { get; }
     }
 
     public interface IAmAPodcast : IAmACommunityMember
     {
     }
-    
+
     public interface IAmANewsletter : IAmACommunityMember
     {
     }

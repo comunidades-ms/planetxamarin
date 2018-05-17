@@ -20,26 +20,38 @@
 
                 if (Model is IWorkAtMicrosoft)
                 {
-                    <text>@Model.FirstName @Model.LastName @Model.ShortBioOrTagLine at Microsoft</text>
+                    var output = string.Empty;
+
+                    var microsoftEmployeeModel = Model as IWorkAtMicrosoft;
+                    if (microsoftEmployeeModel != null)
+                    {
+                        output += microsoftEmployeeModel.Job + " en Microsoft.";
+                    }
+                    <text>@Model.FirstName @Model.LastName es @Html.Raw(output)</text>
+                    if (!string.IsNullOrWhiteSpace(Model.ShortBioOrTagLine))
+                    {
+                        <text>Además, @Model.ShortBioOrTagLine</text>
+                    }
                 }
                 else
                 {
                     if (Model is IAmAMicrosoftMVP)
                     {
-                        <text>@Model.FirstName @Model.LastName is</text>
+                        <text>@Model.FirstName @Model.LastName es</text>
 
                         var output = string.Empty;
 
                         var microsoftMvpModel = Model as IAmAMicrosoftMVP;
                         if (microsoftMvpModel != null)
                         {
-                            output += "a Microsoft";
+                            output += "Microsoft MVP en la categoría " + microsoftMvpModel.Category + ".";
                         }
 
-                        output += " MVP ";
                         <text>@Html.Raw(output)</text>
-
-                        <text>who @Model.ShortBioOrTagLine</text>
+                        if (!string.IsNullOrWhiteSpace(Model.ShortBioOrTagLine))
+                        {
+                            <text>Además, @Model.ShortBioOrTagLine</text>
+                        }
                     }
                     else
                     {

@@ -3,6 +3,7 @@
 @using Humanizer
 @using ThirdDrawer.Extensions.ClassExtensionMethods
 @using Firehose.Web.Extensions
+@using System.Globalization;
 
 @model Firehose.Web.ViewModels.PreviewViewModel
 
@@ -30,7 +31,7 @@
     // If no author was matched, extract the name from the RSS feed, something is better than nothing right?!
     else
     {
-        var creator = item.ElementExtensions.FirstOrDefault(x => x.OuterName == "creator" && x.OuterNamespace == "http://purl.org/dc/elements/1.1/");
+        var creator = item.ElementExtensions.FirstOrDefault(x => x.OuterName == "autor" && x.OuterNamespace == "http://purl.org/dc/elements/1.1/");
         authorName = creator.Coalesce(c => c.GetObject<System.Xml.Linq.XElement>().Value, string.Empty);
     }
 
@@ -45,9 +46,9 @@
         }
         <h1 class="syndicationItemTitle"><a href="@link" target="_blank">@Html.Raw(item.Title.Text)</a></h1>
         <h2 class="syndicationItemDate">
-            @item.PublishDate.Humanize()
+            @item.PublishDate.Humanize(culture: new CultureInfo("es-PE"))
             @if (!string.IsNullOrWhiteSpace(authorName))
-                {
+            {
                 <text>|</text>
                 @authorName
             }
@@ -56,7 +57,7 @@
             @Html.Raw(html.Sanitize())
         </div>
         <div class="syndicationItemFooter">
-            <a href="@link" class="btn btn-primary">View original post</a>
+            <a href="@link" class="btn btn-primary">Ver el post original</a>
         </div>
     </div>
     <hr />
