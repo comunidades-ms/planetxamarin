@@ -60,7 +60,7 @@
 <hr />
 <h1>Xamarin Podcasts, Shows, Newsletters & Open-source Software</h1>
 <p>
-    @foreach (var member in Model.Where(m => m is IAmAPodcast || m is IAmANewsletter || m is IAmAFrameworkForXamarin).ToArray())
+    @foreach (var member in Model.Where(m => m is IAmAPodcast || m is IAmANewsletter).ToArray())
     {
         Html.RenderPartial("PodcastCard", member);
     }

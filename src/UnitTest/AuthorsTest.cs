@@ -17,12 +17,10 @@ namespace UnitTest
         static string[] _interfaceNames =
         {
             nameof(IAmACommunityMember),
-            nameof(IWorkAtXamarinOrMicrosoft),
-            nameof(IAmAXamarinMVP),
+            nameof(IWorkAtMicrosoft),
             nameof(IAmAMicrosoftMVP),
             nameof(IAmAPodcast),
-            nameof(IAmANewsletter),
-            nameof(IAmAFrameworkForXamarin)
+            nameof(IAmANewsletter)
         };
 
         readonly ITestOutputHelper _output;

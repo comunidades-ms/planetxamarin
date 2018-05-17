@@ -4,7 +4,7 @@
 @model IAmACommunityMember
 
 <div class="col-md-4 profileCard" id="@Model.GetType().Name">
-    <img class="mugShot" src="@Model.GravatarImage()" alt="@Model.FirstName @Model.LastName"/>
+    <img class="mugShot" src="@Model.GravatarImage()" alt="@Model.FirstName @Model.LastName" />
     <div class="mugShotBorder">
     </div>
     <div class="profileCardWrapper">
@@ -18,33 +18,22 @@
             @if (!string.IsNullOrWhiteSpace(Model.ShortBioOrTagLine))
             {
 
-                if (Model is IWorkAtXamarinOrMicrosoft)
+                if (Model is IWorkAtMicrosoft)
                 {
                     <text>@Model.FirstName @Model.LastName @Model.ShortBioOrTagLine at Microsoft</text>
                 }
                 else
                 {
-                    if (Model is IAmAXamarinMVP || Model is IAmAMicrosoftMVP)
+                    if (Model is IAmAMicrosoftMVP)
                     {
                         <text>@Model.FirstName @Model.LastName is</text>
 
                         var output = string.Empty;
-                        var xamarinMvpModel = Model as IAmAXamarinMVP;
-                        if (xamarinMvpModel != null)
+
+                        var microsoftMvpModel = Model as IAmAMicrosoftMVP;
+                        if (microsoftMvpModel != null)
                         {
-                            output += "a Xamarin";
-                        }
-                        if (Model is IAmAXamarinMVP && Model is IAmAMicrosoftMVP)
-                        {
-                            output += " and Microsoft";
-                        }
-                        else
-                        {
-                            var microsoftMvpModel = Model as IAmAMicrosoftMVP;
-                            if (microsoftMvpModel != null)
-                            {
-                                output += "a Microsoft";
-                            }
+                            output += "a Microsoft";
                         }
 
                         output += " MVP ";
@@ -61,7 +50,8 @@
         </p>
 
         <p class="location">
-            <i class="fa fa-map-marker"></i> @Model.StateOrRegion</p>
+            <i class="fa fa-map-marker"></i> @Model.StateOrRegion
+        </p>
         <p class="website">
             <a href="@(Model.WebSite.ToString())" title="@Model.WebSite.ToString()">@Model.WebSite.ToString()</a>
         </p>

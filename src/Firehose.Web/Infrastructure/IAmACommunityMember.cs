@@ -36,11 +36,7 @@ namespace Firehose.Web.Infrastructure
         string FeedLanguageCode { get; }
     }
 
-    public interface IWorkAtXamarinOrMicrosoft : IAmACommunityMember
-    {
-    }
-
-    public interface IAmAXamarinMVP : IAmACommunityMember
+    public interface IWorkAtMicrosoft : IAmACommunityMember
     {
     }
 
@@ -56,7 +52,4 @@ namespace Firehose.Web.Infrastructure
     {
     }
 
-    public interface IAmAFrameworkForXamarin : IAmACommunityMember
-    {
-    }
 }
