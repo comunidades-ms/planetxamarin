@@ -8,7 +8,7 @@ Si estás agregando un nuevo blog, lee y marca los casilleros a continuación.
 
 Al enviar este pull request para agregar mi blog, verifico que cumplo con las directrices de Comunidades MS (compruebe cada elemento que corresponda):
 
-- [ ] Tengo un blog y un RSS con urls válidos, ambos usan HTTPS: lock: con un certificado válido
+- [ ] Tengo un blog y un RSS con urls válidos, ambos usan HTTPS :lock: con un certificado válido
 - [ ] NO tengo contenido malicioso u ofensivo en mi blog (incluidas fotos, maldiciones, etc.)
 - [ ] Mi blog está activo con al menos 3 publicaciones relacionadas con tecnologías Microsoft en los últimos 6 meses
 - [ ] Además del punto anterior; tenog que tener continuidad para que mi blog esté activo durante un período de tiempo más largo y que las publicaciones no se hagan solo para cumplir con la directriz: "3 publicaciones en los últimos 6 meses".
