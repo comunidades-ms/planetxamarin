@@ -1,8 +1,8 @@
 # Welcome [![Build status](https://ci.appveyor.com/api/projects/status/lpkmo9pftmku26ck?svg=true)](https://ci.appveyor.com/project/ghuntley/planetxamarin)
 
-Hi! Welcome to comunidadesmicrosoft.org!
+Hola! Bienvenido a comunidadesmicrosoft.org!
 
-If you write about Xamarin, you belong here. You're welcome to add your blog and have it aggregated as part of our feed as long as the content you are sharing does not violate the community [code of conduct](https://github.com/planetxamarin/planetxamarin/blob/master/CODE_OF_CONDUCT.md).
+If you write about Xamarin, you belong here. You're welcome to add your blog and have it aggregated as part of our feed as long as the content you are sharing does not violate the community [code of conduct](CODE_OF_CONDUCT.md).
 
 # Add yourself as an author
 
@@ -16,7 +16,7 @@ If you write about Xamarin, you belong here. You're welcome to add your blog and
 
 ### How to add
 
-To add yourself as an author you can fork this project, add yourself to the [authors folder](https://github.com/planetxamarin/planetxamarin/tree/master/src/Firehose.Web/Authors) as a class, implementing the `IAmACommunityMember` interface. If you are doing this via the GitHub editor, don't forget to _add the class to the .csproj_.
+To add yourself as an author you can fork this project, add yourself to the [authors folder](/src/Firehose.Web/Authors) as a class, implementing the `IAmACommunityMember` interface. If you are doing this via the GitHub editor, don't forget to _add the class to the .csproj_.
 
 The result should look something like this:
 
