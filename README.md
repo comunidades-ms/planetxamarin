@@ -1,40 +1,39 @@
-# Welcome [![Build status](https://ci.appveyor.com/api/projects/status/lpkmo9pftmku26ck?svg=true)](https://ci.appveyor.com/project/ghuntley/planetxamarin)
+# Bienvenido [![Build status](https://ci.appveyor.com/api/projects/status/lpkmo9pftmku26ck?svg=true)](https://ci.appveyor.com/project/wilsonvargas/NN)
 
-Hola! Bienvenido a comunidadesmicrosoft.org!
+Hola! Bienvenido al portal Comunidades Microsoft!
 
-If you write about Xamarin, you belong here. You're welcome to add your blog and have it aggregated as part of our feed as long as the content you are sharing does not violate the community [code of conduct](CODE_OF_CONDUCT.md).
+Si escribes sobre tecnologías Microsoft, tú perteneces aquí. Estaremos muy contentos de que seas parte de la comunidad y que puedas agregar tu blog como parte de nuestro feed siempre y cuando el contenido que está compartiendo no infrinja el [código de conducta](CODE_OF_CONDUCT.md)
 
-# Add yourself as an author
+# Agrega tu blog tú mismo
 
-### Author Guidelines
-- I have a valid blog & RSS URL, both using HTTPS with a valid certificate
-- Host NO malicious or offensive content on the blog (including photos, swearing, etc.)
-- Blog is active with at least 3 Xamarin related blog posts in the last 6 months
-- If the blog has mixed content (Xamarin and Personal/Non-Xamarin blogs) a filter has been applied
-- If you delete your blog you will come delete your blog from Planet Xamarin
-- Your blog may be removed at any time if any of these are broken.
+### Pautas para ser parte de este portal
+- Tener un blog y un RSS con urls válidos, ambos usando HTTPS con un certificado válido.
+- NO tengo contenido malicioso u ofensivo en mi blog (incluidas fotos, maldiciones, etc.).
+- Mi blog está activo con al menos 3 publicaciones relacionadas con tecnologías Microsoft en los últimos 6 meses.
+- Si mi blog tiene contenido variado (artículos personales, artículos no relacionados) tendré agregar el filtro en mi contribución.
+- Si borras tu blog serás eliminado del portal de Comunidades Microsoft.
+- Tu blog puede ser eliminado en cualquier momento si alguna de estas pautas se rompe.
 
-### How to add
+### Cómo agregarme
 
-To add yourself as an author you can fork this project, add yourself to the [authors folder](/src/Firehose.Web/Authors) as a class, implementing the `IAmACommunityMember` interface. If you are doing this via the GitHub editor, don't forget to _add the class to the .csproj_.
+Para ser parte de este portal tú tienes que hacer un fork de este proyecto, agregarte a la [carpeta Authors](/src/Firehose.Web/Authors) como una clase, implementar la interfaz `IAmACommunityMember`. Si estás haciendo esto a través del editor de GitHub, no te olvides de _agregar la clase al archivo .csproj_.
 
-The result should look something like this:
+El resultado debería verse algo así:
 
 ``` csharp
-public class BruceWayne : IAmACommunityMember
+public class WilsonVargas : IAmACommunityMember
 {
-    public string FirstName => "Bruce";
-    public string LastName => "Wayne";
-    public string ShortBioOrTagLine => "potentially batman";
-    public string StateOrRegion => "Gotham";
-    public string EmailAddress => "rescueme@planetxamarin.com";
-    public string TwitterHandle => "planetxamarin";
-    public string GravatarHash => "42abc1337def";
-    public string GitHubHandle => "planetxamarin";
+    public string FirstName => "Wilson";
+    public string LastName => "Vargas";
+    public string ShortBioOrTagLine => "al parecer es un zombie";
+    public string StateOrRegion => "Trujillo, Peru";
+    public string EmailAddress => "wilsonvargas@developermodeon.com";
+    public string TwitterHandle => "wilsonvargas_m";
+    public string GravatarHash => "3544142bb4e";
+    public string GitHubHandle => "wilsonvargas";
     public GeoPosition Position => new GeoPosition(47.643417, -122.126083);
-    public Uri WebSite => new Uri("https://planetxamarin.com/");
-    public IEnumerable<Uri> FeedUris { get { yield return new Uri("https://planetxamarin.com/rss"); } }
-    public FeedLanguageCode => "en";
+    public Uri WebSite => new Uri("https://blog.wilsonvargas.com");
+    public IEnumerable<Uri> FeedUris { get { yield return new Uri("https://blog.wilsonvargas.com/rss/"); } }
 }
 ```
 
