@@ -11,7 +11,7 @@ namespace Firehose.Web.Authors
         public string LastName => "Vargas";
         public string StateOrRegion => "Trujillo, Peru";
         public string EmailAddress => "";
-        public string ShortBioOrTagLine => "is a guy with lots of experience in the software development art and with a great passion for mobile development using Xamarin platform.";
+        public string ShortBioOrTagLine => "es un chico con mucha experiencia en el arte del desarrollo de software y con una gran pasión por el desarrollo de aplicaciones móviles usando Xamarin.";
         public Uri WebSite => new Uri("https://blog.wilsonvargas.com");
 
         public IEnumerable<Uri> FeedUris

@@ -55,13 +55,6 @@
 <p>
     Puedes presumir esto ante el mundo poniendo esta insignia en tu blog. Y si pones un enlace de vuelta a nuestro portal eso sería totalmente increíble!
 </p>
-<img class="featuredbadge" src="~/Content/img/planetxamarin-featured-badge.png" alt="Featured on Planet Xamarin badge" />
+<img class="featuredbadge" src="~/Content/img/comunidades-featured-badge.png" alt="Featured on Community badge" />
 
-<hr />
-<h1>Xamarin Podcasts, Shows, Newsletters & Open-source Software</h1>
-<p>
-    @foreach (var member in Model.Where(m => m is IAmAPodcast || m is IAmANewsletter).ToArray())
-    {
-        Html.RenderPartial("PodcastCard", member);
-    }
-</p>
+
