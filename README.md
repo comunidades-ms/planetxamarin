@@ -8,9 +8,9 @@ Si escribes sobre tecnologías Microsoft, tú perteneces aquí. Estaremos muy co
 
 ### Pautas para ser parte de este portal
 - Tener un blog y un RSS con urls válidos, ambos usando HTTPS con un certificado válido.
-- NO tengo contenido malicioso u ofensivo en mi blog (incluidas fotos, maldiciones, etc.).
+- NO tengo contenido malicioso u ofensivo en mi blog (incluidas fotos, palabras ofensivas, etc.).
 - Mi blog está activo con al menos 3 publicaciones relacionadas con tecnologías Microsoft en los últimos 6 meses.
-- Si mi blog tiene contenido variado (artículos personales, artículos no relacionados) tendré agregar el filtro en mi contribución.
+- Si mi blog tiene contenido variado (artículos personales, artículos no relacionados) tendré agregar el tag "Microsoft" en mi contribución.
 - Si borras tu blog serás eliminado del portal de Comunidades Microsoft.
 - Tu blog puede ser eliminado en cualquier momento si alguna de estas pautas se rompe.
 
