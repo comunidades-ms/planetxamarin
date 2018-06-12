@@ -1,24 +1,24 @@
 <!--
-If you are submitting a new blog please read and check the boxes below.
+Si estás agregando un nuevo blog, lee y marca los casilleros a continuación.
  -->
 
 :pencil2: **Blog Url**: <!-- example: https://example.com -->
 
 :scroll: **Feed Url**: <!-- example: https://example.com/feed.rss -->
 
-By sending this pull request to add my blog I verify that I adhere to the Planet Xamarin blog guidelines (please check each item that applies):
+Al enviar este pull request para agregar mi blog, verifico que cumplo con las directrices de Comunidades MS (compruebe cada elemento que corresponda):
 
-- [ ] I have a valid blog & RSS URL, both using HTTPS :lock: with a valid certificate
-- [ ] I host NO malicious or offensive content on the blog (including photos, swearing, etc.)
-- [ ] My blog is active with at least 3 Xamarin related blog posts in the last 6 months
-- [ ] In addition to the previous guideline; it should be apperant that the blog is active for a longer period of time and the posts on it are not fabricated in a small amount of time to comply to the '3 posts in last 6 months' guideline.
-- [ ] I have applied a filter (Optional: if blog is only about Xamarin or you use `xamarin` in the title or categories in your blog posts)
-- [ ] I have added my Author class to the csproj file
-- [ ] I have implemented `IAmACommunityMember` or one of the other derivatives
-- [ ] I understand, if I delete my blog, I will be deleted from Planet Xamarin
-- [ ] I understand, my blog may be removed at any time if any of these guidelines are broken.
-- [ ] The submitted blog is not owned by a company which sole purpose it is to advertise a product of productline.
+- [ ] Tengo un blog y un RSS con urls válidos, ambos usan HTTPS :lock: con un certificado válido.
+- [ ] NO tengo contenido malicioso u ofensivo en mi blog (incluidas fotos, palabras ofensivas, etc.).
+- [ ] Mi blog está activo con al menos 3 publicaciones relacionadas con tecnologías Microsoft en los últimos 6 meses.
+- [ ] Además del punto anterior; tengo que tener continuidad para que mi blog esté activo durante un período de tiempo más largo y que las publicaciones no sean solo para cumplir con la directriz: "3 publicaciones en los últimos 6 meses".
+- [ ] He aplicado un "tag" en mi blog (Opcional: si el blog es solo sobre tecnologías Microsoft o si usas `Microsoft` en el título o las categorías de las publicaciones del blog).
+- [ ] He agregado mi clase Author al archivo `csproj`.
+- [ ] He implementado `IAmACommunityMember` o uno de los otros derivados.
+- [ ] Entiendo que si borro mi blog, seré eliminado del portal de Comunidades MS.
+- [ ] Entiendo que mi blog puede ser eliminado en cualquier momento si alguna de estas directrices se rompe.
+- [ ] El blog enviado no es propiedad de una empresa cuyo único propósito es publicitar un producto.
 
-Only the collaborators of this repository decide whether a blog is eligible or not. They will determine if the rules are followed and if the quality of the content is high enough. 
+Solo los colaboradores de este repositorio deciden si un blog es elegible o no. Ellos determinarán si se siguen las reglas y si la calidad del contenido es lo suficientemente alta.
 
-Opening another PR, after the first one is closed in a small period of time will not be reevaluated. If a PR is closed, the issues with your blog are too significant to be fixed within a matter of hours.
+No se volverá a evaluar la apertura de otro pull request, después de que el primero se cierre en un corto período de tiempo. Si se cierra un pull request, los problemas con su blog son demasiado graves para solucionarlos en cuestión de horas.

@@ -107,7 +107,7 @@ namespace UnitTest
         public void Author_Specified_Valid_LanguageCode(IAmACommunityMember author)
         {
             var cultureNames = CultureInfo.GetCultures(CultureTypes.NeutralCultures).Select(c => c.Name);
-            Assert.Contains(author.FeedLanguageCode, cultureNames);
+            Assert.Contains("es", cultureNames);
         }
 
         [Theory]

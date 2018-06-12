@@ -16,7 +16,7 @@ namespace Firehose.Web.Controllers
             _members = members.OrderBy(r => random.Next()).ToArray();
         }
 
-        [Route("authors")]
+        [Route("miembros")]
         public ViewResult Index()
         {
             var viewModel = _members;
