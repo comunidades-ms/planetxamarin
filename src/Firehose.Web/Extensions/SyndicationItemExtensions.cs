@@ -11,9 +11,9 @@ namespace Firehose.Web.Extensions
 
             if (item.Categories.Count > 0)
                 hasMicrosoftCategory = item.Categories.Any(category =>
-                    category.Name.ToLowerInvariant().Contains("microsoft"));
+                    category.Name.ToLowerInvariant().Contains(""));
 
-            var hasMicrosoftTitle = item.Title?.Text.ToLowerInvariant().Contains("microsoft") ?? false;
+            var hasMicrosoftTitle = item.Title?.Text.ToLowerInvariant().Contains("") ?? false;
 
             return hasMicrosoftTitle || hasMicrosoftCategory;
         }

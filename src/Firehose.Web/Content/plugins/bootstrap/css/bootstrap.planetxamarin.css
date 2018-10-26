@@ -88,6 +88,6 @@ hr {
   border: 0;
   padding: 10px 15px;
 }
-.btn-primary:hover {
-  background-color: #855386;
-}
+    .btn-primary:hover {
+        background-color: #2e6da4;
+    }
