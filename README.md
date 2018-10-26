@@ -37,24 +37,23 @@ public class WilsonVargas : IAmACommunityMember
 }
 ```
 
-A few things: 
-- Name the class after your first and lastname with PascalCase
-- The `FirstName` and `LastName` property should resemble that same name
-- `ShortBioOrTagLine` property can be whatever you like. If you can't think of anything choose: 'software engineer' or 'software engineer at Microsoft'. Please keep it short, like a 140 character tweet.
-- `StateOrRegion` will be your geographical location, i.e.: Holland, New York, etc.
-- `EmailAddress`, `TwitterHandle` and `GitHubHandle` should be pretty clear, `TwitterHandle` without the leading @
-- `Position` is your latitude and longitude, this allows you to be placed on the map on the Authors page
-- The `Website` property can be your global website or whatever you want people to look at
-- With `FeedUris` you can supply one or more URIs which resemble your blogs. Your blogs should be provided in RSS (Atom) format and of course be about Xamarin.
-- And finally `FeedLanguageCode` specifies in what lanuage the majority of your content will be. This is used to be able to apply filters to the feed. This language code should be in [ISO 639-1 format](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-- If you do not want your e-mailaddress publicly available but you _do_ want to show your Gravatar go to https://en.gravatar.com/site/check/ and get your hash! If you don't fill the hash, you will be viewed as a silhouette.
+Unos puntos más: 
+- Escribir el nombre de la clase con tu nombre y apellido en **Pascal Case**.
+- Las propiedades `FirstName` y `LastName` deben ser similares al nombre de la clase.
+- La propiedad `ShortBioOrTagLine` puede contener lo que tú quieres y mejor te defina. Si no se te ocurre nada, puedes usar: 'Ingeniero de Software' o 'Ingeniero de Software en [Empresa]'. Por favor, se breve, como si fuese un tweet de 140 caracteres.
+- `StateOrRegion` es tu ubicación geográfica, ejm.: Lima, Trujillo, etc.
+- Las propiedades `EmailAddress`, `TwitterHandle` y `GitHubHandle` deben ser bastante claros, `TwitterHandle` sin el @
+- `Position` es tu latitud y longitud, esto permite ubicarte en el mapa de la sección **Autores**
+- La propiedad `Website` puede ser la dirección de tu blog o el enlace que quieras que las personas vean.
+- En la propiedad `FeedUris` puedes poner uno o más URIs que se parezcan a tus blogs. Tus blogs deben proporcionarse en formato RSS (Atom) y, por supuesto, ser sobre tecnologías Microsoft.
+- Y finalmente, si no deseas que tu dirección de correo esté disponible públicamente, pero deseas mostrar tu Gravatar, ve a https://en.gravatar.com/site/check/ y obten tu hash. Si no rellenas el hash, tu imagen será una silueta solamente.
 
-If you also do some blogging about other stuff, no worries! You're fine! Just have a look at the next section on how to filter out your Xamarin specific posts.
+Si haces alguna publicación sobre otras cosas, ¡no te preocupes! ¡Está bien! Échale un vistazo a la siguiente sección sobre cómo filtrar tus publicaciones de tecnologías Microsoft.
 
-# Just Xamarin please
+# Solo tecnologías Microsoft por favor
 
-Per default PlanetXamarin implements a default filter looking for Xamarin in the title and categories (tags) you have on your blog posts. This behavior can be modified by implementing `IFilterMyBlogPosts`, where you can implement your own filtering logic.
-It could be that you want to disable all filtering because your blog is solely about Xamarin. Maybe, you run a Xamarin newsletter or podcast.
+Por defecto, este portal no tiene un filtro predeterminado que busque publicaciones de tecnologías Microsoft en el título y las categorías (etiquetas) que tiene en sus publicaciones de blog. Este comportamiento se puede modificar implementando `IFilterMyBlogPosts`, donde puede implementar su propia lógica de filtrado.
+Puede ser que desees deshabilitar todo el filtrado porque tu blog es únicamente sobre Xamarin. Tal vez, se ejecuta un boletín de noticias o podcast de Xamarin.
 
 ``` csharp
 public class BruceWayne : IAmACommunityMember, IFilterMyBlogPosts
@@ -84,7 +83,7 @@ A big step for mankind! Last thing that remains is submit a Pull Request to us a
 Don't forget to incorporate the Featured on Planet Xamarin badge on your blog and link back to us!
 
 
-![Featured on Planet Xamarin Badge](https://www.planetxamarin.com/Content/img/planetxamarin-featured-badge.png)
+![Featured on Comunidades Microsoft](src/Firehose.Web/Content/img/comunidades-featured-badge.png)
 
 Enjoy all of our great content! 
 
